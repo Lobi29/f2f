@@ -1,32 +1,3 @@
-import comment from "./comment";
-import post from "./post";
-import postedBy from "./postedBy";
-import user from "./user";
-
-export const schemaTypes = [comment, post, postedBy, user];
-
-<!-- comment -->
-import { defineType, defineField } from 'sanity';
-
-export default defineType({
-    name: 'comment',
-    title: 'Comment',
-    type: 'document',
-    fields: [
-        defineField({
-            name: 'postedBy',
-            title: 'PostedBy',
-            type: 'postedBy',
-        }),
-        defineField({
-            name: 'comment',
-            title: 'Comment',
-            type: 'string',
-        }),
-    ],
-});
-
-<!-- post -->
 import { defineField, defineType } from "sanity";
 
 export default defineType({
@@ -77,37 +48,6 @@ export default defineType({
         defineField({
             name: 'topic',
             title: 'Topic',
-            type: 'string',
-        }),
-    ],
-});
-
-<!-- posted by -->
-import { defineType } from "sanity";
-
-export default defineType({
-    name: 'postedBy',
-    title: 'PostedBy',
-    type: 'reference',
-    to: [{ type: 'user' }],
-});
-
-<!-- user -->
-import { defineField, defineType } from "sanity";
-
-export default defineType({
-    name: 'user',
-    title: 'User',
-    type: 'document',
-    fields: [
-        defineField({
-            name: 'userName',
-            title: 'UserName',
-            type: 'string',
-        }),
-        defineField({
-            name: 'image',
-            title: 'Image',
             type: 'string',
         }),
     ],
