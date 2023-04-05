@@ -1,9 +1,20 @@
-import Navbar from '@/components/Navbar'
-import Sidebar from '@/components/Sidebar'
-import '@/styles/globals.css'
-import { AppProps } from 'next/app'
+import Navbar from '@/components/Navbar';
+import Sidebar from '@/components/Sidebar';
+import '@/styles/globals.css';
+import { AppProps } from 'next/app';
+
+import { useState, useEffect } from 'react';
 
 export default function App({ Component, pageProps }: AppProps) {
+
+  const [isSSR, setIsSSR] = useState(true);
+
+  useEffect(() => {
+    setIsSSR(false);
+  }, []);
+
+  if (isSSR) return null;
+
   return (
     <div>
       <Navbar />
