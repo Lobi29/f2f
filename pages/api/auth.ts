@@ -8,6 +8,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const user = req.body;
 
     client.createIfNotExists(user)
-        .then(() => res.status(200).json('Login success'))
+      .then(() => res.status(200).json('Login success'))
   }
 }

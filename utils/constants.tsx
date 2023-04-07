@@ -1,42 +1,44 @@
-import { BsCode, BsEmojiSunglasses } from 'react-icons/bs';
-import { GiCakeSlice, GiGalaxy, GiLipstick } from 'react-icons/gi';
-import { FaPaw, FaMedal, FaGamepad } from 'react-icons/fa';
+import { TbToolsKitchen, TbPlant, TbMilk } from 'react-icons/tb';
+import { BsGlobe2 } from 'react-icons/bs';
+import { RiGovernmentLine } from 'react-icons/ri';
+import { GiCarrot, GiFertilizerBag } from 'react-icons/gi';
+import { MdReduceCapacity } from 'react-icons/md';
 
 export const topics = [
   {
-    name: 'coding',
-    icon: <BsCode />,
+    name: 'dairy',
+    icon: <TbMilk />,
   },
   {
-    name: 'comedy',
-    icon: <BsEmojiSunglasses />,
+    name: 'education',
+    icon: <MdReduceCapacity />,
   },
   {
-    name: 'gaming',
-    icon: <FaGamepad />,
+    name: 'fertilizer',
+    icon: <GiFertilizerBag />,
   },
   {
-    name: 'food',
-    icon: <GiCakeSlice />,
+    name: 'crops',
+    icon: <GiCarrot />,
   },
   {
-    name: 'dance',
-    icon: <GiGalaxy />,
+    name: 'scheme',
+    icon: <RiGovernmentLine />,
   },
   {
-    name: 'beauty',
-    icon: <GiLipstick />,
+    name: 'MixedFarming',
+    icon: <TbPlant />,
   },
   {
-    name: 'animals',
-    icon: <FaPaw />,
+    name: 'technology',
+    icon: <BsGlobe2 />,
   },
   {
-    name: 'sports',
-    icon: <FaMedal />,
+    name: 'tools',
+    icon: <TbToolsKitchen />,
   },
 ];
 
 export const footerList1 = ['About', 'Newsroom', 'Store', 'Contact', 'Carrers', 'ByteDance', 'Creator Directory']
-export const footerList2 = [ 'TikTik for Good','Advertise','Developers','Transparency','TikTik Rewards' ]
+export const footerList2 = [ 'F2F for Good','Advertise','Developers','Transparency','F2F Rewards' ]
 export const footerList3 = [ 'Help', 'Safety', 'Terms', 'Privacy', 'Creator Portal', 'Community Guidelines' ]

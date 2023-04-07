@@ -1,16 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
-
 import { NextPage } from 'next';
 import { Video } from '../types';
 import Image from 'next/image';
 import Link from 'next/link';
-
 import { HiVolumeUp, HiVolumeOff } from 'react-icons/hi';
 import { BsFillPlayFill, BsFillPauseFill } from 'react-icons/bs';
 import { GoVerified } from 'react-icons/go';
-import { BsPlay } from 'react-icons/bs';
-import { isMinusToken } from 'typescript';
-
 
 interface IProps {
   post: Video;
@@ -29,7 +24,7 @@ const VideoCard: NextPage<IProps> = ({ post }) => {
       setPlaying(false);
     } else {
       videoRef?.current?.play();
-      setPlaying(true); 
+      setPlaying(true);
     }
   }
 
@@ -83,7 +78,7 @@ const VideoCard: NextPage<IProps> = ({ post }) => {
               src={post.video.asset.url}
               className='lg:w-[600px] h-[300px] md:h-[400px] lg:h-[528px] w-[200px] rounded-2xl cursor-pointer bg-gray-100'></video>
           </Link>
- 
+
           {isHover && (
             <div className='absolute bottom-6 cursor-pointer left-8 md:left-14 lg:left-0 flex gap-10 lg:justify-between w-[100px] md:w-[50px] lg:w-[600px] p-3'>
               {playing ? (

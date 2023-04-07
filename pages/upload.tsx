@@ -3,14 +3,11 @@ import { useRouter } from "next/router";
 import { FaCloudUploadAlt } from 'react-icons/fa';
 import { MdDelete } from 'react-icons/md';
 import axios from "axios";
-
-import useAuthStore from "@/store/authStore";
-import { client } from "@/utils/client";
-
+import useAuthStore from "../store/authStore";
+import { client } from "../utils/client";
 import { SanityAssetDocument } from "@sanity/client";
-
 import { topics } from '../utils/constants';
-import { BASE_URL } from "@/utils";
+import { BASE_URL } from "../utils";
 
 const Upload = () => {
     const [isLoading, setIsLoading] = useState(false);
@@ -51,16 +48,16 @@ const Upload = () => {
                 _type: 'post',
                 caption,
                 video: {
-                  _type: 'file',
-                  asset: {
-                    _type: 'reference',
-                    _ref: videoAsset._id,
-                  },
+                    _type: 'file',
+                    asset: {
+                        _type: 'reference',
+                        _ref: videoAsset._id,
+                    },
                 },
                 userId: userProfile._id,
                 postedBy: {
-                  _type: 'postedBy',
-                  _ref: userProfile._id,
+                    _type: 'postedBy',
+                    _ref: userProfile._id,
                 },
                 topic: category
             }
@@ -111,7 +108,7 @@ const Upload = () => {
                                                     Up to 10 minutes <br />
                                                     Less than 2GB
                                                 </p>
-                                                <p className="bg-[#F51997] text-center mt-10
+                                                <p className="bg-[#13aa52] text-center mt-10
                                                  rounded text-white text-md font-medium p-2 w-52 outline-none">
                                                     Select File
                                                 </p>
@@ -143,24 +140,24 @@ const Upload = () => {
                             <select
                                 onChange={(e) => setCategory(e.target.value)}
                                 className="outline-none lg:w-650 border-2 border-gray-200 text-md capitalize lg:p-4 p-2 rounded cursor-pointer">
-                                    {topics.map((topic) => (
-                                        <option key={topic.name} className="outline-none capitalize bg-white text-gray-700 text-md p-2 hover:bg-slate-300" value={topic.name}>
-                                            {topic.name}
-                                        </option>
-                                    ))}
+                                {topics.map((topic) => (
+                                    <option key={topic.name} className="outline-none capitalize bg-white text-gray-700 text-md p-2 hover:bg-slate-300" value={topic.name}>
+                                        {topic.name}
+                                    </option>
+                                ))}
                             </select>
                             <div className="flex gap-6 mt-10">
-                                <button 
-                                onClick={() => {}}
-                                type="button"
-                                className="border-gray-300 border-2 text-md font-medium p-2 rounded w-28 lg:w-44 outline-none"
+                                <button
+                                    onClick={() => { }}
+                                    type="button"
+                                    className="border-gray-300 border-2 text-md font-medium p-2 rounded w-28 lg:w-44 outline-none"
                                 >
                                     Discard
                                 </button>
-                                <button 
-                                onClick={handlePost}
-                                type="button"
-                                className="bg-[#F51997] text-white text-md font-medium p-2 rounded w-28 lg:w-44 outline-none"
+                                <button
+                                    onClick={handlePost}
+                                    type="button"
+                                    className="bg-[#13aa52] text-white text-md font-medium p-2 rounded w-28 lg:w-44 outline-none"
                                 >
                                     Post
                                 </button>

@@ -3,10 +3,10 @@ import Image from "next/image";
 import { GoVerified } from "react-icons/go";
 import axios from "axios";
 
-import VideoCard from "@/components/VideoCard";
-import NoResults from "@/components/NoResults";
+import VideoCard from "../../components/VideoCard";
+import NoResults from "../../components/NoResults";
 import { IUser, Video } from '../../types';
-import { BASE_URL } from "@/utils";
+import { BASE_URL } from "../../utils";
 
 interface IProps {
   data: {
@@ -58,7 +58,7 @@ const Profile = ({ data }: IProps) => {
 
       <div>
         <div className="flex gap-10 mb-10 mt-10 border-b-2 border-gray-200 bg-white w-full">
-        <p className={`text-xl font-semibold cursor-pointer ${videos} mt-2`} onClick={() => setShowUserVideos(true)}>
+          <p className={`text-xl font-semibold cursor-pointer ${videos} mt-2`} onClick={() => setShowUserVideos(true)}>
             Videos
           </p>
           <p className={`text-xl font-semibold cursor-pointer ${liked} mt-2`} onClick={() => setShowUserVideos(false)}>

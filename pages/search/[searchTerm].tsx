@@ -4,7 +4,6 @@ import { useRouter } from 'next/router';
 import { GoVerified } from 'react-icons/go';
 import Link from 'next/link';
 import axios from 'axios';
-
 import NoResults from '../../components/NoResults';
 import VideoCard from '../../components/VideoCard';
 import useAuthStore from '../../store/authStore';
@@ -21,7 +20,7 @@ const Search = ({ videos }: { videos: Video[] }) => {
   const accounts = isAccounts ? 'border-b-2 border-black' : 'text-gray-400';
   const isVideos = !isAccounts ? 'border-b-2 border-black' : 'text-gray-400';
   const searchedAccounts = allUsers?.filter((user: IUser) => user.userName.toLowerCase().includes(searchTerm));
-  
+
   return (
     <div className='w-full  '>
       <div className='flex gap-10 mb-10 border-b-2 border-gray-200 md:fixed z-50 bg-white w-full'>
@@ -39,7 +38,7 @@ const Search = ({ videos }: { videos: Video[] }) => {
               <Link key={idx} href={`/profile/${user._id}`}>
                 <div className=' flex gap-3 p-2 cursor-pointer font-semibold rounded border-b-2 border-gray-200'>
                   <div>
-                    <Image width={50} height={50} className='rounded-full' alt='user-profile' src={user.image}/>
+                    <Image width={50} height={50} className='rounded-full' alt='user-profile' src={user.image} />
                   </div>
                   <div>
                     <div>

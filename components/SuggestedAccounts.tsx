@@ -1,11 +1,9 @@
-import { useEffect }  from 'react';
+import { useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { GoVerified } from 'react-icons/go';
-
-import useAuthStore from '@/store/authStore';
-
-import { IUser } from '@/types';
+import useAuthStore from '../store/authStore';
+import { IUser } from '../types';
 
 const SuggestedAccounts = () => {
   const { fetchAllUsers, allUsers } = useAuthStore();
@@ -24,7 +22,7 @@ const SuggestedAccounts = () => {
           <Link href={`/profile/${user._id}`} key={user._id}>
             <div className='flex gap-3 hover:bg-primary p-2 cursor-pointer font-semibold rounded'>
               <div className='w-8 h-8'>
-              <Image
+                <Image
                   width={34}
                   height={34}
                   className='rounded-full'

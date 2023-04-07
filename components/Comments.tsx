@@ -2,10 +2,9 @@ import { Dispatch, SetStateAction } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { GoVerified } from 'react-icons/go';
-
-import useAuthStore from '@/store/authStore';
+import useAuthStore from '../store/authStore';
 import NoResults from './NoResults';
-import { IUser } from '@/types';
+import { IUser } from '../types';
 
 interface IProps {
   isPostingComment: Boolean;

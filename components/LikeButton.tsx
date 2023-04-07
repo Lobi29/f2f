@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { MdFavorite } from 'react-icons/md';
-
 import useAuthStore from '@/store/authStore';
 
 interface IProps {
@@ -9,7 +8,7 @@ interface IProps {
   likes: any[];
 }
 
-const LikeButton = ({ likes, handleLike, handleDislike}: IProps) => {
+const LikeButton = ({ likes, handleLike, handleDislike }: IProps) => {
   const [alreadyLiked, setAlreadyLiked] = useState(false);
   const { userProfile }: any = useAuthStore();
   const filterLikes = likes?.filter((item) => item._ref === userProfile?._id);

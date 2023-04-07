@@ -7,11 +7,11 @@ import { MdOutlineCancel } from 'react-icons/md';
 import { BsFillPauseFill, BsFillPlayFill } from 'react-icons/bs';
 import { HiVolumeUp, HiVolumeOff } from 'react-icons/hi';
 import axios from "axios";
-import { BASE_URL } from "@/utils";
-import { Video } from "@/types";
-import useAuthStore from "@/store/authStore";
-import LikeButton from "@/components/LikeButton";
-import Comments from "@/components/Comments";
+import { BASE_URL } from "../../utils";
+import { Video } from "../../types";
+import useAuthStore from "../../store/authStore";
+import LikeButton from "../../components/LikeButton";
+import Comments from "../../components/Comments";
 
 interface IProps {
   postDetails: Video,
@@ -53,11 +53,11 @@ const Detail = ({ postDetails }: IProps) => {
         like
       })
 
-      setPost({...post, likes: data.likes});
+      setPost({ ...post, likes: data.likes });
     }
   }
 
-  const addComment = async (e)  => {
+  const addComment = async (e) => {
     e.preventDefault();
 
     if (userProfile && comment) {
@@ -68,7 +68,7 @@ const Detail = ({ postDetails }: IProps) => {
         comment
       });
 
-      setPost({ ...post, comments: data.comments});
+      setPost({ ...post, comments: data.comments });
       setComment('');
       setIsPostingComment(false);
     }
