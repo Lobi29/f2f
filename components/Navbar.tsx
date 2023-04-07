@@ -13,6 +13,18 @@ import useAuthStore from '@/store/authStore';
 
 const Navbar = () => {
   const { userProfile, addUser, removeUser } = useAuthStore();
+  const [searchValue, setSearchValue] = useState('');
+  const router = useRouter();
+
+  const handleSearch = (e: {
+    preventDefault: () => void
+  }) => {
+    e.preventDefault();
+
+    if (searchValue) {
+      router.push(`/search/${searchValue}`)
+    }
+  }
 
   return (
     <div className='w-full flex justify-between items-center border-b-2 border-gray-200 py-2 px-4'>
@@ -26,7 +38,7 @@ const Navbar = () => {
         </div>
       </Link>
 
-      {/* <div className='relative hidden md:block'>
+      <div className='relative hidden md:block'>
         <form
           onSubmit={handleSearch}
           className='absolute md:static top-10 -left-20 bg-white'
@@ -44,7 +56,7 @@ const Navbar = () => {
             <BiSearch />
           </button>
         </form>
-      </div> */}
+      </div>
 
 
       <div>
