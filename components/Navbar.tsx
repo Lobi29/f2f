@@ -31,8 +31,8 @@ const Navbar = () => {
         <div className='w-[100px] md:w-[129px] md:h-[30px] h-[38px]'>
           <Image
             className='cursor-pointer absolute top-2'
-            width={60}
-            height={60}
+            width={80}
+            height={80}
             src={Logo}
             alt='logo'
           />

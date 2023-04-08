@@ -66,35 +66,40 @@ a {
   background-color: transparent;
 }
 
+/* about page */
 
-
-
-/* styles for landing page */
-.landing {
-  font-size: 10px;
+.about h1,
+.about h2,
+.about h3,
+.about h4,
+.about h5,
+.about h6,
+.about p {
+    margin: 0;
 }
-.landing h1 {
+
+.about h1 {
     font-size: 40px;
     font-weight: 600;
     line-height: 1.4;
     color: var(--primary-text);
 }
 
-.landing h2 {
+.about h2 {
     font-size: 35px;
     font-weight: 600;
     line-height: 1.2;
     color: var(--primary-text);
 }
 
-.landing h3 {
+.about h3 {
     font-size: 30px;
     line-height: 1.2;
     font-weight: 700;
     color: var(--primary-text);
 }
 
-.landing h4 {
+.about h4 {
     font-size: 25px;
     font-weight: 700;
     line-height: 1;
@@ -102,137 +107,143 @@ a {
 }
 
 
-.landing p {
+.about p {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.6;
     color: var(--primary-text);
 }
 
+
+
 /* button */
 
-.landing .main-btn {
-  background-color: #00ED64;
-  color: var(--primary-text);
-  font-size: 16px;
-  font-weight: 500;
-  padding: 16px 32px;
-  border: 1px solid #111;
-  border-radius: 4px;
-  font-family: var(--primary-font);
-  transition: 0.1s;
+.about .main-btn {
+    background-color: #00ED64;
+    color: var(--primary-text);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 16px 32px;
+    border: 1px solid #111;
+    border-radius: 4px;
+    font-family: var(--primary-font);
+    transition: 0.1s;
 }
 
-.landing .main-btn:hover {
-  border-radius: 30px;
+.about .main-btn:hover {
+    border-radius: 30px;
 }
 
 
 /* navbar */
-.landing .eventRemainder {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  padding: 5px;
-  background-color: var(--secondary-green);
+.about .eventRemainder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    background-color: var(--secondary-green);
 }
 
-.landing .eventBtn {
-  padding: 5px 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  font-size: 12px;
-  font-family: var(--primary-font);
-  color: var(--text-white);
+.about .eventBtn {
+    padding: 5px 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 12px;
+    font-family: var(--primary-font);
+    color: var(--text-white);
 }
 
-.landing nav {
-  position: sticky;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px;
-  z-index: 9;
-  transition: 0.7s;
-  background-color: var(--bg-white);
+.about nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 9;
+    transition: 0.7s;
+    background-color: var(--bg-white);
 }
 
-.landing .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.about .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.landing .navbarLogo {
-  width: 70px;
-  height: 50px;
-  margin: 0 30px;
+.about .navbarLogo {
+    width: 70px;
+    height: 50px;
+    margin: 0 30px;
 }
 
-.landing nav .container-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+.about nav .container-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
-.landing nav .container ul li {
-  display: inline-block;
-  margin: 0 24px;
+.about nav .container ul li {
+    display: inline-block;
+    margin: 0 24px;
 }
 
-.landing nav .container ul li a {
-  font-size: 20px;
-  color: var(--primary-text);
+.about nav .container ul li a {
+    font-size: 20px;
+    color: var(--primary-text);
 }
-
-
 
 
 /* homepage */
-.landing .homeContainer {
+.about .homeContainer {
   padding-top: 20vh;
   padding-left: 30px;
   padding-right: 30px;
 
-  height: 100vh;
+  min-height: 100vh;
   background: #023430;
 
 
   display: flex;
   flex-direction: column;
   gap: 30px;
-  justify-content: start;
+  justify-content: flex-start;
 
   border-bottom-right-radius: 50%;
 }
 
-.landing .informationContainer {
+.about .informationContainer {
   max-width: 600px;
 }
-.landing .informationContainer h1 {
+
+.about .informationContainer h1 {
   color: wheat;
   padding: 20px 0;
   font-size: 70px;
 }
-.landing .informationContainer h3 {
+
+.about .informationContainer h3 {
   color: white;
   padding: 15px 0;
   font-size: 40px;
 }
-.landing .informationContainer p {
+
+.about .informationContainer p {
   color: #ccc;
   padding: 10px 0;
   font-size: 20px;
 }
 
+.about .informationContainer span {
+  font-weight: bolder;
+}
 
 
 
 
 /* trusties */
-.landing .trustContainer {
+.about .trustContainer {
   margin: 70px 30px 50px 30px;
   
   display: flex;
@@ -241,38 +252,16 @@ a {
   align-items: center;
   gap: 20px;
 }
-.landing .landing .trustContainer h4{
-  font-size: 30px;
-  font-weight: 500;
-}
-.landing .eventRemainder{
-  display: flex;
-  justify-content:space-around;
-  /* margin: auto; */
-  margin-top: 1px;
-}
-.landing .eventRemainder p{
-  color: white;
-  margin: auto; 
-  margin-right: 0px;
-} 
-.landing .eventRemainder span{
-  margin: auto;
-  margin-left: 0px;
-}
-.landing eventRemainder span a:hover{
-  background-color: #b2b2b3;
-}
-.landing .investFarms {
+
+.about .investFarms {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
   flex-wrap: wrap;
-  gap: 50px;
 }
 
-.landing .trustContainer img {
+.about .trustContainer img {
   width: 200px;
   margin: 0 20px;
 }
@@ -280,97 +269,129 @@ a {
 
 
 /* learnign container */
-.landing .learningContainer {
+.about .learningContainer {
   box-sizing: border-box;
   margin: 70px 30px 50px 30px;
   padding: 30px 50px 30px 70px;
-  border-radius: 50px;
+  border-radius: 5rem;
   min-height: 60vh;
   background: linear-gradient(to left, var(--tertiary-green), var(--secondary-green));
-}
-.landing .learningContainer{
   display: flex;
-  justify-content: center;
-
+  justify-content: space-between;
+  align-items: center;
 }
 
-.landing .learningContainer .learningInfo {
+.about .learningContainer .learningInfo {
   max-width: 600px;
 }
 
-.landing .learningContainer .learningInfo h3 {
+.about .learningContainer .learningInfo h3 {
   color: white;
   margin: 20px 0;
 }
 
-.landing .learningContainer .learningInfo p {
+.about .learningContainer .learningInfo p {
   font-size: 18px;
   font-weight: bolder;
   margin: 20px 0;
 }
 
 
+/* developers */
+.about .developers {
+  padding: 50px;
+  background: var(--tertiary-green);
+}
 
+.about .heading {
+  text-align: center;
+  margin: 30px;
+  color: var(--light-color);
+}
 
+.about .developersList {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about .developer {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  padding: 20px;
+  background: var(--bg-white);
+  border-radius: 20px;
+}
+
+.about .developer img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
 
 
 
 /* footer */
-.landing .footerContainer {
+.about .footerContainer {
   display: flex;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-between;
   margin: 70px 30px 50px 30px;
   padding: 30px 50px 30px 50px;
+
+  box-sizing: border-box;
+  border-radius: 50px;
+  min-height: 60vh;
+  background: linear-gradient(
+    to left,
+    var(--tertiary-green),
+    var(--secondary-green)
+  );
+
 }
 
-.landing .logoContainer {
+.about .logoContainer {
   text-align: center;
 }
 
-.landing .logoContainer img {
+.about .logoContainer img {
   width: 80px;
   margin: 0 40px;
 }
 
-.landing .pageLinks ul li {
+.about .pageLinks ul li {
   list-style-type: none;
   font-size: 20px;
   font-weight: bolder;
 }
 
-.landing .social-icon ul {
+.about .social-icon ul {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   list-style-type: none;
 }
 
-.landing .social-icon ul li a {
-  font-size: 25px;
-  color: #111;
-}
-
-.landing .copyright {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70px;
-  background-color: #ccc;
+.about .copyright {
+text-align: center;
 }
 
 
 
 
-/* responsive design */
-@media only screen and (max-width: 600px) {
-  nav .container ul li {
-      margin: 0 1.5rem;
-  }
 
-  nav .container ul li a {
-      font-size: 1.5rem;
-  }
-}
 
 
 
@@ -522,15 +543,16 @@ object {
 /* banner style */
 .news .bannerContainer {
     width: 100%;
-    height: 40vh;
-    background-image: url(/assets/banner1.jpg);
+    min-height: 40vh;
+    background-image: url(/assets/news/newsBanner/banner1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 10px;
 
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     gap: 40px;
     padding: 50px;
     margin-bottom: 50px;
@@ -554,7 +576,7 @@ object {
 }
 
 .news .newsBlock {
-    width: 350px;
+    width: 99%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;    
@@ -563,21 +585,108 @@ object {
     padding: 20px;
 
     background: #ccc;
-    border: 1px solid var(--tertiary-green);
+    border: 1% solid var(--text-gray);
     border-radius: 20px;
 
     cursor: pointer;
 
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
-.news .newsBlock:hover {
-    width: 370px;
-    border: 2px solid var(--tertiary-green);
+
+.news .newsBlock .imageContainer1 {
+  width: 100%;
+  height: 40vh;
+  background-image: url(/assets/news/newsImgae/point1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.news .newsBlock img {
-    border-radius: 20px;
+.news .newsBlock .imageContainer2 {
+  width: 100%;
+  height: 40vh;
+  background-image: url(/assets/news/newsImgae/point2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.news .newsBlock .imageContainer3 {
+  width: 100%;
+  height: 40vh;
+  background-image: url(/assets/news/newsImgae/point3.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.news .newsBlock .imageContainer4 {
+  width: 100%;
+  height: 40vh;
+  background-image: url(/assets/news/newsImgae/point4.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.news .newsBlock .imageContainer5 {
+  width: 100%;
+  height: 40vh;
+  background-image: url(/assets/news/newsImgae/point5.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.news .newsBlock .imageContainer6 {
+  width: 100%;
+  height: 40vh;
+  background-image: url(/assets/news/newsImgae/point6.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.news .newsBlock .imageContainer7 {
+  width: 100%;
+  height: 40vh;
+  background-image: url(/assets/news/newsImgae/point7.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.news .newsBlock .imageContainer8 {
+  width: 100%;
+  height: 40vh;
+  background-image: url(/assets/news/newsImgae/point8.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.news .newsBlock .imageContainer9 {
+  width: 100%;
+  height: 40vh;
+  background-image: url(/assets/news/newsImgae/point9.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.news .newsBlock .imageContainer10 {
+  width: 100%;
+  height: 40vh;
+  background-image: url(/assets/news/newsImgae/point10.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.news .newsBlock .imageContainer h1 {
+  margin: 10px;
+  color: #fff;
 }
 
 
@@ -590,8 +699,6 @@ object {
     padding: 30px 50px 30px 50px;
 
     box-sizing: border-box;
-    /* margin: 7rem 3rem 5rem 3rem; */
-    /* padding: 3rem 5rem 3rem 7rem; */
     border-radius: 50px;
     min-height: 60vh;
     background: linear-gradient(
@@ -624,29 +731,6 @@ object {
     list-style-type: none;
 }
 
-.news .social-icon ul li a {
-    font-size: 25px;
-    color: #111;
-}
-
 .news .copyright {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70px;
-    background-color: #ccc;
-}
-
-
-
-
-/* responsive design */
-@media only screen and (max-width: 600px) {
-    nav .container ul li {
-        margin: 0 15px;
-    }
-
-    nav .container ul li a {
-        font-size: 15px;
-    }
+  text-align: center;
 }

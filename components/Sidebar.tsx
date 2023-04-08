@@ -5,6 +5,8 @@ import Link from "next/link";
 import { GoogleLogin } from "@react-oauth/google";
 import { AiFillHome, AiOutlineMenu } from "react-icons/ai";
 import { ImCancelCircle } from "react-icons/im";
+import { BsNewspaper } from 'react-icons/bs';
+import { FcAbout } from 'react-icons/fc';
 import Discover from "./Discover";
 import SuggestedAccounts from "./SuggestedAccounts";
 import Footer from "./Footer";
@@ -35,6 +37,26 @@ const Sidebar = () => {
                 </p>
                 <span className='capitalize text-xl hidden xl:block'>
                   For You
+                </span>
+              </div>
+            </Link>
+            <Link href="/news">
+              <div className={normalLink}>
+                <p className='text-2xl'>
+                  <BsNewspaper />
+                </p>
+                <span className='capitalize text-xl hidden xl:block'>
+                  news
+                </span>
+              </div>
+            </Link>
+            <Link href="/about">
+              <div className={normalLink}>
+                <p className='text-2xl'>
+                  <FcAbout />
+                </p>
+                <span className='capitalize text-xl hidden xl:block'>
+                  About
                 </span>
               </div>
             </Link>
