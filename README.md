@@ -1,3 +1,6 @@
+![homepage](https://github.com/Lobi29/f2f/assets/108052802/caa86964-283d-45bc-b0b0-19fb36c5d9b2)
+
+
 # Next.js + Typescript + Tailwind CSS + Sanity
 
 ## F2F is online platform which farmer can connect each other & the whole farmer community to the investors which are genuine interested in the agricultural  field.  This is the common platform where all the farmers discuss, grow themself and propose their unique ideas to the investors and raise funding.
